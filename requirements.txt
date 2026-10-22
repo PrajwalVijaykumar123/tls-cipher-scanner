@@ -1,0 +1,5 @@
+# No external dependencies - uses only the Python standard library
+# (ssl, socket, json, argparse). Behavior depends on the system's
+# OpenSSL build (ssl.OPENSSL_VERSION) - a build with legacy ciphers
+# fully removed (not just disabled) will correctly report them as
+# unsupported rather than weak-but-present.
